@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ 
+    <head>
+        <style>
+            /* Demo styles */
+            html,body{background:#222;margin:0;}
+            body{border-top:4px solid #000;}
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
+            h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
+            p{margin:0 0 20px}
+            a {color:#22BCB9;text-decoration:none;}
+            .cred{margin-top:20px;font-size:11px;}
+
+            /* Definizione della galleria , l'altezza e tutto , per ulteriori chiarimenti : wmcore@outlook.it '*/
+            
+            #galleria{height:320px}
+
+        </style>
+        <title>My test of gallery with implementation</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <div class="content">
+        <h1>Galleria con info in alto</h1>
+        <p>Dimostrazione di una Galleria Classica.</p>
+
+        <!-- Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary -->
+
+        <div id="galleria">
+            <a href="https://r.mprd.se/fup/up/51932-Crash_Bandicoot_2_-_Cortex_Strikes_Back_(E)-2.jpg">
+                <img 
+                    src="https://r.mprd.se/fup/up/51932-Crash_Bandicoot_2_-_Cortex_Strikes_Back_(E)-2.jpg",
+                    data-big="https://r.mprd.se/fup/up/51932-Crash_Bandicoot_2_-_Cortex_Strikes_Back_(E)-2.jpg"
+                    data-title="Crash Bandicoot 2"
+                    data-description="Questo gioco io lo adoro poiche' lo giocavo fin da piccolo e non smetto mai di divertirmi mentre lo gioco"
+                >
+            </a>
+            <a href="https://r.mprd.se/fup/up/51933-Crash_Bandicoot_3_-_Warped_(E)-1.jpg">
+                <img 
+                    src="https://r.mprd.se/fup/up/51933-Crash_Bandicoot_3_-_Warped_(E)-1.jpg",
+                    data-big="https://r.mprd.se/fup/up/51933-Crash_Bandicoot_3_-_Warped_(E)-1.jpg"
+                    data-title="Crash Bandicoot 3"
+                    data-description="Io non concepisco come una volta sapessero fare i giochi invece ora non piu!!"
+                >
+            </a>
+            <a href="http://img1.game-oldies.com/sites/default/files/packshots/sony-playstation/crash-bandicoot-usa.jpg">
+                <img 
+                    src="http://img1.game-oldies.com/sites/default/files/packshots/sony-playstation/crash-bandicoot-usa.jpg",
+                    data-big="http://img1.game-oldies.com/sites/default/files/packshots/sony-playstation/crash-bandicoot-usa.jpg"
+                    data-title="Il gioco migliore mai creato"
+                    data-description="Io ricordo le ore passate da piccolo cercando di far funzionare i diski della PSx/1 , 
+                    non ricodo se ho finito mai questo gioco ma rigiocandolo ora io ricordo tutto quello che facevo da piccolo"
+                >
+            </a>
+
+        </div>
+        <p class="cred">Made by <a href="http://galleria.io">Galleria</a>.</p>
+    </div>
+                                      
+        
+        <!-- load a script --> 
+                                        
+                                        
+                                        
+    <!-- load jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <!-- load Galleria -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.6/galleria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.6/themes/classic/galleria.classic.min.js"></script>
+    <script>
+        $(function() {
+            Galleria.run('#galleria');
+        });
+    </script>
+    </body>
+</html>
